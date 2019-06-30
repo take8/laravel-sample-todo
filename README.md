@@ -43,3 +43,22 @@ composer require 'laralib/l5scaffold' --dev
 ```sh
 php artisan make:scaffold Task -v --schema="title:string,body:text"
 ```
+
+上記のコマンド実行時の最後にメッセージが表示されるが、
+`routes/web.php`に以下を追記する。
+
+```php
+Route::resource("tasks", "TaskController");
+```
+
+```sh
+php artisan migrate
+```
+
+## 起動
+
+```sh
+php artisan serve
+```
+
+`http://127.0.0.1:8000/tasks`にアクセス
