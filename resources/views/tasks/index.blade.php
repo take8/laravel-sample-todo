@@ -19,7 +19,7 @@
                         <tr>
                             <th>ID</th>
                             <th>TITLE</th>
-                        <th>BODY</th>
+                            <th>BODY</th>
                             <th class="text-right">OPTIONS</th>
                         </tr>
                     </thead>
@@ -29,7 +29,7 @@
                             <tr>
                                 <td>{{$task->id}}</td>
                                 <td>{{$task->title}}</td>
-                    <td>{{$task->body}}</td>
+                                <td>{{$task->body}}</td>
                                 <td class="text-right">
                                     <a class="btn btn-xs btn-primary" href="{{ route('tasks.show', $task->id) }}"><i class="glyphicon glyphicon-eye-open"></i> View</a>
                                     <a class="btn btn-xs btn-warning" href="{{ route('tasks.edit', $task->id) }}"><i class="glyphicon glyphicon-edit"></i> Edit</a>

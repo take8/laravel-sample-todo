@@ -23,12 +23,12 @@
                     <p class="form-control-static"></p>
                 </div>
                 <div class="form-group">
-                     <label for="title">TITLE</label>
-                     <p class="form-control-static">{{$task->title}}</p>
+                    <label for="title">TITLE</label>
+                    <p class="form-control-static">{{$task->title}}</p>
                 </div>
-                    <div class="form-group">
-                     <label for="body">BODY</label>
-                     <p class="form-control-static">{{$task->body}}</p>
+                <div class="form-group">
+                    <label for="body">BODY</label>
+                    <p class="form-control-static">{{$task->body}}</p>
                 </div>
             </form>
 
