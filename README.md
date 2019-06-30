@@ -35,5 +35,11 @@ composer require 'laralib/l5scaffold' --dev
 ```
 
 ただし、Laravel 5.5 以降では上記だけではエラーになるので以下のように`vendor`配のコードの修正を行う。
-
 [Laravel の Scaffold のインストール問題](https://qiita.com/masahirok_jp/items/f4efcf9f8b518c2be7b0)
+
+さらに以下の対応も必要だった。
+[Laravel 5.7 の scaffold でハマった](https://qiita.com/take8/items/9fe3442be55f0de5d76e)
+
+```sh
+php artisan make:scaffold Task -v --schema="title:string,body:text"
+```
