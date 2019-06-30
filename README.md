@@ -27,3 +27,9 @@ composer create-project "laravel/laravel=5.7.*" bookapp
 php artisan -V
 > Laravel Framework 5.7.28
 ```
+
+## Scaffold を使う
+
+```sh
+composer require 'laralib/l5scaffold' --dev
+```
